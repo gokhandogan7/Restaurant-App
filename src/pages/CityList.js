@@ -6,6 +6,8 @@ import {View, Text, Button, FlatList} from 'react-native';
 import {CityItem, SearchBar} from '../components';
 
 const CityList = (props) => {
+  const [cityList, setCityList] = useState([]);
+
   return (
     <View>
       <Text>CityList</Text>
