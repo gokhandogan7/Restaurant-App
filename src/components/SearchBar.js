@@ -17,8 +17,8 @@ export {SearchBar};
 const styles = StyleSheet.create({
   container: {
     backgroundColor: '#d0d0d0',
-    margin: 10,
-    padding: 10,
+    margin: 7,
+    padding: 7,
     borderRadius: 5,
   },
 });

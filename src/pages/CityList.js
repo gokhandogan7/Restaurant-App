@@ -18,15 +18,24 @@ const CityList = (props) => {
 
   const renderCities = ({item}) => <CityItem cityName={item} />;
 
+  function searchCity(search) {}
+
   return (
     <View>
       <Text style={{fontSize: 35, fontWeight: 'bold', textAlign: 'center'}}>
         CityList
       </Text>
+      <SearchBar
+        placeholder="Bir sehir arayin"
+        onSearch={(value) => console.log(value)}
+      />
       <FlatList
         keyExtractor={(_, index) => index.toString()}
         data={cityList}
         renderItem={renderCities}
+        ItemSeparatorComponent={() => (
+          <View style={{borderColor: '#d0d0d0', borderWidth: 1}} />
+        )}
       />
     </View>
   );
